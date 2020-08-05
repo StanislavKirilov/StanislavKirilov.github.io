@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="Style/style.css">
+		
+		<title>The Space Odyssey</title>
+	</head>
+	<body>
+		<div id="introText">
+			<section class="intro d-flex justify-content-center">A long time ago, in a galaxy,<br> far away....</section>
+			<div id="introBoard">
+				<div id="introContent">
+					<h1 id="introTitle" style="font-size: 84px; font-weight: bold;">The Space Odyssey</h1>
+					<br>
+					<p> In a distant star system, the Twelve Colonies of Mankind were reaching the end of a thousand-year war with the Cylons, warrior robots created by a reptilian race which expired long ago, presumably destroyed by their own creations. Humanity was ultimately defeated in a sneak attack on their homeworlds by the Cylons, carried out with the help of a human traitor, Count Baltar. Protected by the last surviving capital warship, a "battlestar" (from "battle starship"), named Galactica, the survivors fled their homes in a hope of a survival. The Commander of the Galactica, Adama, led this the last remains of the human civilization in search of a new home. They began a quest to find the long lost thirteenth tribe of humanity that had settled on a legendary planet called Earth. However, the Cylons continued to pursue them relentlessly across the galaxy.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="optionsScreen">
+			<div class="row" id="buttonHolder">
+				<button type="button" class="btn btn-outline-info col-sm-2" id="howToPlay" data-toggle="modal" data-target=".bs-example-modal-new"> How to Play?</button>
+				<!-- Modal -->
+					<div class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="gridSystemModalLabel"></h4>
+								</div>
+								<div class="modal-body">
+									<div class="body-message">
+										<h4 class="d-flex justify-content-center"> Welcome to The Space Odyssey Game</h4>
+										<hr>
+										<h5 class="d-flex justify-content-center">Meet the characters</h5>
+										<hr>
+										<p>
+											<span class="text-success">BattleStar Galactica</span>
+											 - is the last remaining Battleship of the human civilization. 
+										You are the last hope for the human civilization to survive and flourish again. Do you have what it takes to raise the human civilization or you will bring them do their doom?</p>
+										<p>
+											<span class="text-danger">Cylon BaseStar</span>
+											 - is the Cylons best Battleship. Your goal is to find the surviving human civilization and finish it. According to the intel what's left of them is on the Galactica Battlestar. Find them and destroy them in order to secure the flourish of the Cylons.</p>
+										<hr>
+										<h5 class="d-flex justify-content-center">In game Weapons</h5>
+										<hr>
+										<p>Every character is able to pick up one of the available weapons. The weapons are randomly located all over the map. After picking up a new weapon, the previous weapon will be left behind.</p>
+										<p>
+											<img src="Style/Images/lasers.png" class="minified"></img> - Lasers are the default weapons with which each ship is equiped, they can inflict <span style="color:darkblue">5</span> points damage.
+										</p>
+										<p>
+											<img src="Style/Images/Viper.png" class="minified"></img> - Vipers are the humans attack fighter ships, they can inflict <span style="color:green">10</span> points damage.
+										</p>
+										<p>
+											<img src="Style/Images/cylonViper.png" class="minified"></img> - Cylon Vipers are the cylon attack fighter ships, they can inflict <span style="color:green">10</span> points damage.
+										</p>
+										<p>
+											<img src="Style/Images/ballisticRocket.png" class="minified"></img> - Ballistic rockets are being used on both sides in the war, they can inflict <span style="color:goldenrod">15</span> points damage.
+										</p>
+										<p>
+											<img src="Style/Images/missleTwo.png" class="minified"></img> - Missles rockets are being used on both sides in the war, they can inflict <span style="color:goldenrod">15</span> points damage.
+										</p>
+										<p>
+											<img src="Style/Images/nuclearRocket.png" class="minified"></img> - Nuclear rockets are the ultimate weapon on both sides in the war, they can inflict <span style="color:red">20</span> points damage.
+										</p>
+										<hr>
+										<h5 class="d-flex justify-content-center">Player movement</h5>
+										<p>In order to move a player simply click on the player which move is it and the available tiles on the board will be highlighted. To move the player just click on one of the available tiles. 
+											Note that since the human civilization are fighting for survival they will have the first move.</p>
+										<hr>
+										<h5 class="d-flex justify-content-center">Game Rules</h5>
+										<hr>
+										<p>1. Each character is able to move three steps horizontally or vertically at a time. To see whose turn is next, just look on the very top of the game screen.</p>
+										<p>2. The blocking mode reduces the damage taken by 50%.</p>
+										<p>3. As soon as one of the character's health bar has reached 0 the game is over, to play again please refresh the page and enjoy!.</p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				<button class="btn btn-outline-success col-sm-2 offset-2" id="playButton"> Play Game!</button>
+				<button class="btn btn-outline-danger col-sm-2 offset-2" id="exitButton"> Exit game :(</button>
+			</div>
+		</div>
+		<div class="container" id="gameContainer">
+			<h1 id="heading" class="col-sm-12 mt-4 mb-4"> The Space Odyssey </h1>
+			<div class="row">
+				<div class="col-sm-4 d-flex justify-content-center">
+					<div class="row">
+						<h3 class="col-sm-12 d-flex justify-content-center p-2"> Battlestar Galactica </h3>
+						<img src="Style/images/battlestarGalactica.png" class="col-sm-12 d-flex justify-content-center" id="player1" width="130px" height="130px">
+						<div class="col-sm-12 d-flex justify-content-center">
+							<meter id="playerOneHealth" max=100 min=0 value=100 high=75 low=25 optimum=100></meter>
+							</div>
+							<div id="WeaponPlayerOne" class="col-sm-12 d-flex justify-content-center"><p>Weapon:<span id="weaponSpanPlayerOne"> </span></p></div>
+							<div id="DamagePlayerOne"class="col-sm-12 d-flex justify-content-center"><p>Damage:<span id="damageSpanPlayerOne"> </span></p></div>
+					</div>
+				</div>
+				<div class="col-sm-4 p-2">
+					<div class="row">
+						<h3 id="playerTurn" class="col-sm-12"></h3>
+						<div class="row col-sm-12" id="buttonsRow">
+							<button class="btn btn-outline-success col-sm-3 offset-2"  style="display: none;" id="AttackButton"><i class="fas fa-khanda fa-3x"></i></button>
+							<button class="btn btn-outline-primary col-sm-3 offset-2" style="display: none;" id="DefendButton"><i class="fas fa-shield-alt fa-3x"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 p-2">
+					<div class="row">
+						<h3 class="col-sm-12 d-flex justify-content-center"> Cylon BaseStar </h3>
+						<img src="style/images/cylonBasestar.png" class="col-sm-12 d-flex justify-content-center" id="player2" width="130px" height="130px">
+						<div class="col-sm-12 d-flex justify-content-center">
+							<meter id="playerTwoHealth" max=100 min=0 value=100 high=75 low=25 optimum=100></meter>
+						</div>
+						<div id="WeaponPlayerTwo" class="col-sm-12 d-flex justify-content-center"><p>Weapon:<span id="weaponSpanPlayerTwo"> </span></p></div>
+						<div id="DamagePlayerTwo"class="col-sm-12 d-flex justify-content-center"><p>Damage:<span id="damageSpanPlayerTwo"> </span></pclass="pt-2"></div>
+					</div>
+				</div>
+			</div>
+			<section class="board table-responsive col-sm-12" >
+				<table id="table" class="table boardTable">
+				</table>
+			</section>
+			<div class="d-flex justify-content-end">
+				<button id="musicButton" class="d-flex justify-content-end mr-3"><i class="fas fa-volume-up"></i></button>
+			</div>
+		</div>
+		<div class="endDiv">
+			<h3 id="endMessage" style="font-size: 30px; font-weight: bold;"></h3>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.4/holder.js"></script>
+		<script src="https://kit.fontawesome.com/958faee643.js"></script>
+		<script src="Script/script.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,87 @@
+
+body {
+	background-color: #fffcfa;
+
+}
+.dropdown-item {
+	color: gray;
+}
+
+}
+.card-body {
+	padding: 5px 0px;
+	margin: 0px;
+}
+
+.card-header{
+	padding: 5px 0px;
+	background-color: #e3e2e1;
+	
+}
+
+h2, h4, h5 {
+	color: #e3b052;
+	font-family: "Bradley Hand ITC";
+	font-weight: 700;
+	font-style: italic;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h3 {
+	font-size: 2.5em;
+	text-decoration: underline;
+	font-family: "Bradley Hand ITC";
+	font-weight: 700;
+	font-style: italic;
+	color: #f8f9fa;
+}
+
+h2 {
+	font-size: 4em;
+	background-image: linear-gradient(to right, #fffcfa, #909c9c, #fffcfa);
+ }
+
+
+
+.card{
+	text-align: center;
+	margin: 5px 10px;
+	background-color: #e3e2e1;
+}
+
+#watchItOutside {
+	font-weight: 700;
+	font-size: 1.2em;
+	color: #e3b052;
+	font-family: "Bradley Hand ITC";
+}
+
+.btn-group-sm>.btn, .btn-sm {
+	margin: 0.15rem 0rem;
+}
+
+.img-container {
+	position: relative;
+	display: inline-block;
+}
+
+.img-container .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#e3e2e1;
+  opacity:0;
+  transition:opacity 500ms ease-in-out;
+  font-size: 0.77rem;
+}
+
+.img-container:hover .overlay{
+  opacity:0.9;
+}
+
+

@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Boston Movie Festival</title>
+</head>
+<body>
+  <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="opacity: 0.85;">
+        <a class="navbar-brand" href="#">BMF2k19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item collapseItem">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item collapseItem">
+              <a class="nav-link" href="#AboutUs" >About Us</a>
+            </li>
+            <!-- DropDown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >Movies</a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item collapseItem" href="#5thofAugust">5th of August</a>
+                <a class="dropdown-item collapseItem" href="#6thofAugust">6th of August</a>
+                <a class="dropdown-item collapseItem" href="#7thofAugust">7th of August</a>
+                <a class="dropdown-item collapseItem" href="#8thofAugust">8th of August</a>
+              </div>
+            </li>
+
+            <!--  -->
+            <li class="nav-item collapseItem">
+              <a class="nav-link" href="#Register">Register</a>
+            <li class="nav-item collapseItem">
+              <a class="nav-link" href="#LatestNews">Latest News</a>
+            <li class="nav-item collapseItem">
+              <a class="nav-link" href="#FindUs" >Find Us</a>
+          </ul>
+           <div class="input-group" style="width: 300px;">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <!-- Carousel -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide d-block w-100 " src="Images/Carousel1.jpg" alt="First slide"height="650"style="max-height: 650px;">
+          <!--  <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              </div>
+            </div> -->
+          </div>
+          <div class="carousel-item ">
+            <img class="second-slide d-md-flex w-100" src="Images/moviefilm.jpg" alt="Second slide" height="650" style="max-height: 650px;">
+          <!--  <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide d-md-flex w-100" src="Images/Carousel3.jpg" alt="Third slide" height="650" style="max-height: 650px;">
+         <!--   <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br>
+
+
+
+      <!-- Marketing Container -->
+
+      
+        
+
+      <div class="container" id="Marketing" > 
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="text-center col-md-4">
+            <i class="fas fa-hand-pointer fa-4x mb-2">
+            </i>
+            <h4 id="marketingHeading">Select your Movie</h2>
+            <p class="text-black-50">There is something for everybody. Simply went through our webpage and select a movie of your choosing.</p>
+            <p><a class="btn btn-secondary" href="#Movies" role="button">Select a Movie »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="text-center col-md-4">
+            <i class="fas fa-registered fa-4x mb-2">
+            </i>
+            <h4 id="marketingHeading">Register it is free!</h2>
+            <p class="text-black-50">There is no entry Fee all you have to do is to Pre-Register. Do it now, the festival has a capacity of 1500 people per projection!</p>
+            <p><a class="btn btn-secondary" href="#Register" role="button">Register »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="text-center col-md-4">
+            <i class="fas fa-cookie-bite fa-4x mb-2">
+            </i>
+            <h4 id="marketingHeading">Enjoy the movie!</h2>
+            <p class="text-black-50" >Grab your snack and head out to Boston Public Garden!</p>
+            <p><a class="btn btn-secondary" href="#FindUs" role="button">Find Us »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div>
+
+      
+
+        <!-- Marketing Container -->
+
+        <!-- About Us -->
+        
+
+        <div class="container-fluid" id="AboutUs">
+         <div class="row">
+          <div class="col-lg-12">
+            <h2 class="text-center"> About Us </h2>
+          </div>
+              <br>
+        </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 ">
+                <img class="featurette-image img-fluid mx-auto" alt="700x600" style="width: 700px; height: 600px;" src="Images/aboutus.jpg" data-holder-rendered="true" >
+              </div>
+              <div class="col-md-4">
+                <h5> &emsp;&emsp;About Us </h5>
+                <p class="text-black-50"> &emsp; Watch it Outside is a non profit organization who loves to share the passion of cinematography with the people.  </p>
+                <h5> &emsp;&emsp;Love Cinematography </h5>
+                <p class="text-black-50"> &emsp;Boston Movie Festival is one of the biggest events in the city hosted at the Boston Public Gardens. We are glad to present 4 days of breathtaking movies. There will be something for everybody with our wide range of projections. Bostom Movie Festival is completly free of charge thanks to our partners all you need is to pre-register.</p>
+                <h5> &emsp;&emsp;Our master mind </h5>
+                  <p class="text-black-50">&emsp;Clara Dunn is the founder and CEO of Watch it Outside events Co., with a wide experience on the cinematography industry. Her biggest desire was to share her passion with the world. Since 2012 she started to bring movies to the people, first in Brooklyn and the all across the USA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      
+      <br>
+
+
+        <!-- Movies Container -->
+
+        <div class="container-fluid" id="Movies" style="background-image: url(Images/moviesbg.jpg);">
+  
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="text-center" style="margin-right: -15px; margin-left: -15px;">Movies</h2>
+            </div>
+          </div>
+              <br>
+
+          <div class="container">
+            <div class="row" id="5thofAugust">
+              <!-- 5th of August -->
+              <div class="col-sm-12">
+                <h3 class="text-center" >#5th of August</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    Avangers Endgame<br>
+                    18:00 - 20:00
+                  </div>
+                  <div class="img-container">
+                    <img class="card-img-top" src="Images/avangers.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;"> Avengers Endgame </h5>
+                        <p class="text-center text-black-50"> Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers, 2015's Avengers: Age of Ultron, and 2018's Avengers: Infinity War and the twenty-second film in the Marvel Cinematic Universe (MCU).  </p>
+                       <p class="text-center text-black-50"><strong>Directors: </strong> Anthony Russo, Joe Russo</p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong> Christopher Markus, Stephen McFeely</p>
+                   </div>
+                 </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt4154796/videoplayer/vi2163260441?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                 <div class="card ">
+                  <div class="card-header">
+                    Interstellar <br>
+                    20:00 - 22:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/Interstellar.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;"> Interstellar </h5>
+                        <p class="text-center text-black-50">  Interstellar is a 2014 science fiction film directed and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for humanity. </p>
+                       <p class="text-center text-black-50"><strong>Director: </strong>Christopher Nolan</p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong>Jonathan Nolan, Christopher Nolan</p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0816692/videoplayer/vi1586278169?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    Guardians of the Galaxy <br>
+                    22:00 - 24:00
+                  </div>
+                      <div class="img-container">
+                      <img class="card-img-top" src="Images/Guardians.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;"> Guardians of the Galaxy </h5>
+                        <p class="text-center text-black-50">  A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe. </p>
+                       <p class="text-center text-black-50"><strong>Director: </strong> James Gunn</p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong> James Gunn, Nicole Perlman</p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt2015381/videoplayer/vi1441049625?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        <br>
+ <!-- 6th of August -->
+          <div class="row" id="6thofAugust">
+            <div class="col-sm-12">
+              <h3 class="text-center">#6th of August</h3>
+            </div>
+          </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    Inside Out<br>
+                    18:00 - 20:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/insideout.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;"> Inside Out </h5>
+                        <p class="text-center text-black-50">  After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school. </p>
+                       <p class="text-center text-black-50"><strong>Directors: </strong>  Pete Docter, Ronnie Del Carmen</p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong>  Pete Docter, Ronnie Del Carmen</p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt2096673/videoplayer/vi3685069081?ref_=vp_pl_1" target="_blank" class="btn btn-outline-info btn-sm" >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    How to Train your Dragon <br>
+                    20:00 - 22:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/dragon.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;"> How to Train your Dragon </h5>
+                        <p class="text-center text-black-50">  Launches gamers into a third-person action-adventure as a Viking hero where they must embark upon an epic quest to become the ultimate dragon trainer. </p>
+                       <p class="text-center text-black-50"><strong>Directors: </strong>  Chris Sanders, Dean DeBlois </p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong>   Will Davies, Chris Sanders, Dean DeBlois </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0892769/videoplayer/vi1158218777?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm" >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    Finding Nemo <br>
+                    22:00 - 24:00
+                  </div>
+                 <div class="img-container">
+                      <img class="card-img-top" src="Images/nemo.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">Finding Nemo</h5>
+                        <p class="text-center text-black-50">  After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home. </p>
+                       <p class="text-center text-black-50"><strong>Directors: </strong> Andrew Stanton, Lee Unkrich </p>
+                       <p class="text-center text-black-50"><strong>Writer: </strong>   Andrew Stanton </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0266543/videoplayer/vi2687214105?ref_=vp_pl_1" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          <br>
+<!-- 7th of August --> 
+          <div class="row" id="7thofAugust">
+            <div class="col-sm-12">
+              <h3 class="text-center">#7th of August</h3>
+            </div>
+          </div>
+              <br>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    Troy <br>
+                    18:00 - 20:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/troy.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">Troy</h5>
+                        <p class="text-center text-black-50">  An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved. </p>
+                       <p class="text-center text-black-50"><strong>Director: </strong> Wolfgang Petersen </p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong>  Homer (poem), David Benioff (screenplay) </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0332452/videoplayer/vi3237937433?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm" >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    The Prestige <br>
+                    20:00 - 22:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/prestige.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">The Prestige</h5>
+                        <p class="text-center text-black-50">  After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other. </p>
+                       <p class="text-center text-black-50"><strong>Director: </strong> Christopher Nolan </p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong>   Jonathan Nolan , Christopher Nolan </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0482571/videoplayer/vi2885334553?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    Gladiator <br>
+                    22:00 - 24:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/Gladiator.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">Gladiator</h5>
+                        <p class="text-center text-black-50">  A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</p>
+                       <p class="text-center text-black-50"><strong>Director: </strong> Ridley Scott </p>
+                       <p class="text-center text-black-50"><strong>Writer: </strong>   David Franzoni </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0172495/videoplayer/vi2628367897?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        <br>
+
+        <!-- 8th of August -->
+          <div class="row" id="8thofAugust">
+            <div class="col-sm-12 ">
+              <h3 class="text-center" >#8th of August</h3>
+            </div>
+          </div>
+              <br>
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                    Forrest Gump <br>
+                    18:00 - 20:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/forrestgump.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">Forrest Gump</h5>
+                        <p class="text-center text-black-50">  The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.</p>
+                       <p class="text-center text-black-50"><strong>Director: </strong>  Robert Zemeckis </p>
+                       <p class="text-center text-black-50"><strong>Writers: </strong>   Winston Groom (novel), Eric Roth (screenplay) </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0109830/videoplayer/vi3567517977?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="card-header">
+                   The Shawshank Redemption <br>
+                    20:00 - 22:00
+                  </div>
+                 <div class="img-container">
+                      <img class="card-img-top" src="Images/Shawshank.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">The Shawshank Redemption</h5>
+                        <p class="text-center text-black-50">  Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+                       <p class="text-center text-black-50"><strong>Director: </strong>  Frank Darabont </p>
+                       <p class="text-center text-black-50"><strong>Writer: </strong>  Stephen King , Frank Darabont </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0111161/videoplayer/vi3877612057?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    Schindler's List<br>
+                    22:00 - 00:00
+                  </div>
+                  <div class="img-container">
+                      <img class="card-img-top" src="Images/Shindler.jpg" alt="Card image cap">
+                    <div class="overlay">
+                      <h5 style="font-size: 2em;">Schindler's List</h5>
+                        <p class="text-center text-black-50">  In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis. </p>
+                       <p class="text-center text-black-50"><strong>Director: </strong>  Steven Spielberg </p>
+                       <p class="text-center text-black-50"><strong>Writer: </strong>   Thomas Keneally (book), Steven Zaillian (screenplay) </p>
+                    </div>
+                  </div>
+                    <div class="card-footer align-items-end" >
+                        <a href="https://www.imdb.com/title/tt0108052/videoplayer/vi1158527769?ref_=tt_ov_vi" target="_blank" class="btn btn-outline-info btn-sm " >Watch Trailer</a>
+                        <a href="#Register"  class="btn btn-outline-success btn-sm " >Reserve a Ticket</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br>
+
+      <!-- Movies -->
+
+      <!-- Register -->
+
+      <div class="container-fluid" id="Register">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center"> Register </h2>
+          </div>
+        </div>
+           <br>
+          <div class="container">
+            <div class="row">
+              <form class="form-horizontal col-md-7 border border-dark align-self-baseline" style="border-radius: 5px;">
+                <div class="form-group">
+                  <legend class="d-flex justify-content-center"><h5>Tickets Reservation</h5></legend>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="FirstName" class="control-label"> First Name: </label>         
+                      <input type="text" class="form-control input-md" id="FirstName" placeholder="First Name" required="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="LastName" class="control-label"> Last Name: </label>         
+                      <input type="text" class="form-control input-md" id="LastName" placeholder="Last Name" required="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="Email" class="control-label"> E-mail: </label>         
+                      <input type="text" class="form-control input-md" id="Email" placeholder="E-mail" required="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="ticketsNumber" class="control-label"> Number of Tickets: </label>         
+                      <input type="text" class="form-control input-md" id="ticketsNumber" placeholder="Number of Tickets" required="">
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <label class="control-label" for="selectDate"> Select Date: </label>
+                    <select id="selectDate" class="form-control" name="selectDate">
+                      <option value="1">5th of August</option>
+                      <option value="2">6th of August</option>
+                      <option value="3">7th of August</option>
+                      <option value="4">8th of August</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="projectionTime"> Time of Projection: </label>
+                    <select id="projectionTime" class="form-control" name="projectionTime">
+                      <option value="1">18:00</option>
+                      <option value="2">20:00</option>
+                      <option value="3">22:00</option>
+                    </select>
+                  </div>
+                <div class="form-group d-flex justify-content-center">
+                  <button id="Submit" name="Submit" class="btn btn-outline-primary">Reserve Tickets</button>
+                </div>
+            </form>
+            <div class="col-md-5">
+              <h5 class="d-flex justify-content-center" style="font-size: 2em;">  Festivals' Fees and Rules </h5>
+              <div class="alert alert-success mb-0" role="alert"> &emsp;There are <strong>NO</strong> entry fees all you need to do is to <strong>Pre-Register</strong> since we have a restricted capacity of 1500 People per night.
+              </div>
+              <div class="alert alert-info m-0 " role="alert"> &emsp;Mobile Ramps have been provided so that all of us can enjoy Boston Movie Festival.
+              </div>
+              <div class="alert alert-info m-0 " role="alert"> &emsp;Thanks to our <strong>Partners</strong> we have provided 50 additional recycle bins.
+              </div>
+              <div class="alert alert-info m-0" role="alert"> &emsp;Food and drinks Stands will be available on site, however everybody is welcome to bring his own food and drinks. The Festival is open to everybody from the youngest to the oldest people that is why <span class="alert alert-danger p-0 m-0"><strong>No Alcohol will be sold or permited on site!</strong></span>
+              </div>
+              <div class="alert alert-danger mt-0" role="alert"> &emsp;We have a strict policy about recycling! Our moto is <strong>Keep or Bin it!</strong>
+                Additional Bins have been provided for the purpose.
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+
+
+      <!-- Latest News -->
+
+      <div class="container-fluid" id="LatestNews">
+        <div class="row" >
+          <div class="col-lg-12">
+            <h2 class="text-center"> Latest News</h2>
+          </div>
+        </div>
+            <br>
+            <div class="container">
+            <div class="row">
+              <section class="col-md-7">
+                <p> <span class="lead">17th of July 2019</span><br> &emsp; <strong> Movies line-up Confirmed</strong> For this year's edition of the festival, we have secured breathtaking movies for everybody! There will be Sky-Fi night, Family night, Action night and All-time Classics night. Stay tuned, more information is on its way!<span class="blockquote-footer mt-o p-0 d-flex justify-content-end"> Cinematography Team </span> </p> <hr>
+
+                 <p> <span class="lead">12th of July 2019</span><br> &emsp; <strong> New, BIGGER screen</strong> For this year's edition of the festival, we have secured an EVEN BIGGER, MORE VIBRANT screen on which to display our wonderful programme of films. These films will never have looked better than they will in this wondeful environment on this beats of a screen!<span class="blockquote-footer mt-o p-0 d-flex justify-content-end"> Cinematography Team </span> </p> <hr>
+
+                <p> <span class="lead ">5th of July 2019</span><br> &emsp; <strong> Food Truck line-up confirmed</strong> We now have the full list of caterers for the festival and it contains some seriously good eats! Confirmed food trucks and restaurants for this year’s event thus far include: Epic Eats, Got Paella, Dos Banditos, Marcel Belgian Waffles, Sub Fusion (2017 People’s Choice Winner) Devilicious and the Pierogi Truck.<span class="blockquote-footer mt-o p-0 d-flex justify-content-end"> Management Team </span> </p> <hr>
+                <p><span class="lead">17th of June 2019</span><br> &emsp; In addition to the great programme of films, we are happy to confirm that there will be live music before, inbetween and after the movies! Stay tuned for further updates, expect great things!<span class="blockquote-footer mt-o p-0 d-flex justify-content-end"> Cinematography Team </span> </p> <hr>
+
+                <p><span class="lead">2nd of June 2019</span><br> &emsp;Pop the PopCorn and Ice the Drinks. It has been confirmed <span id="watchItOutside">Watch it Outside events Co.</span> has the privilage to organize a <strong>free </strong> movie Festival in Boston Public Garden. Subscribe to recieve our latest news and event updates.<span class="blockquote-footer mt-o p-0 d-flex justify-content-end"> Clara Dun, CEO at Watch it Outside events Co. </span> </p> <hr>       
+              </section>
+
+<!-- Subscribe Form -->
+
+              <form class="form-horizontal col-md-5 border border-dark align-self-baseline" style="border-radius: 5px;">
+                <div class="form-group">
+                  <legend class="d-flex justify-content-center">Subscribe</legend>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="FirstName" class="control-label"> First Name: </label>         
+                      <input type="text" class="form-control input-md" id="FirstName" placeholder="First Name" required="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="LastName" class="control-label"> Last Name: </label>         
+                      <input type="text" class="form-control input-md" id="LastName" placeholder="Last Name" required="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="Email" class="control-label"> E-mail: </label>         
+                      <input type="text" class="form-control input-md" id="Email" placeholder="E-mail" required="">
+                  </div>
+                </div>
+                 <div class="form-group col-md-12">
+                  <input type="text" readonly class="form-control-plaintext" id="staticText" value="By submitting this form you agree to:">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                      Receive Latest News and Important Information about the Event.
+                      </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                      <label class="form-check-label" for="defaultCheck2">
+                      Receive Information about Future Events and Promotions.
+                      </label>
+                  </div>
+                </div>
+                <div class="form-group d-flex justify-content-center">
+                  <button id="Submit" name="Submit" class="btn btn-outline-primary">Submit</button>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    <br>
+
+    <!-- Subscribe Form -->
+      <!-- Find Us -->
+
+      <div class="container-fluid" id="FindUs">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center"> Find Us </h2>
+          </div>
+        </div>
+            <br>
+            <div class="container">
+              <div class="row">
+                <section class="text-center col md-4">
+				<h5> Where are we? </h5>
+                  <p>
+                    The film festival is situated at Boston Public Garden<br>
+                    4 Charles St, MA 02116<br>
+                    Boston, Massachusetts, USA<br>
+                  </p><hr>
+				  <h5> Closest Tram Station </h5>
+                  <p>
+                    Arlington, Boston, MA 02116, United States<br>
+                  </p><hr>
+				  <h5> Closest Parking </h5>
+                  <p>
+                    Boston Common Garage<br>
+                    Boston Common Garage, 0 Charles St, Boston, MA 02116, USA<br>
+                  </p><hr>
+                </section>
+                <div class="col-md-8">
+                  <!--Google map-->
+                  <div class="embed-responsive embed-responsive-16by9" id="map-container-google-1"  style="min-height:240px;min-width:240px;position:relative" >
+                    <iframe class="embed-responsive-item" src="https://maps.google.com/maps?&amp;q=Boston Public Garden&amp;z=15&amp;t=q&amp;output=embed" frameborder="0" width="100" height="100" style="width:100%;height:100%;position:absolute;left:0px;"allowfullscreen>
+                    </iframe>
+                  </div>
+                  <br>
+                  <!--Google Maps-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+	  
+	  <footer>
+		<div class="container-fluid bg-dark" id="Footer" style="opacity: 0.85;">
+			<div class="row ">
+				<div class="col-sm-6 text-center mt-2 mb-2" >
+					<h5 class="mb-0"> Follow us to stay tuned! </h5>    
+						<a href="https://facebook.com" target="_blank">
+							<i class="fab fa-facebook fa-2x m-2 text-light footerLinks" id="facebook" style="color: #e3b052;"></i> 
+						</a>
+						<a href="https://twitter.com" target="_blank" >
+							<i class="fab fa-twitter fa-2x m-2  text-light footerLinks" style="color: #e3b052;"></i> 
+						</a>
+						<a href="https://instagram.com" target="_blank" >
+							<i class="fab fa-instagram fa-2x m-2 text-light footerLinks" style="color: #e3b052;"></i>
+						</a>
+						<a href="https://youtube.com" target="_blank" >
+							<i class="fab fa-youtube fa-2x m-2 text-light footerLinks" style="color: #e3b052;"></i> 
+						</a>
+				</div>
+				<div class="col-sm-6  text-center mt-2 mb-2" >
+					<h5 class="mb-0" id="OurPartners"> Our Partners </h5>   
+						<a href="https://www.boston.com/" target="_blank" class="mt-0 text-light footerLinks" style="color: #e3b052;">Boston News </a><br>
+						<a href="https://www.boston.gov/parks/public-garden" target="_blank" class="mt-0 text-light footerLinks" style="color: #e3b052;"> Boston Public Garden </a><br>
+						<a href="https://www.boston.gov/" class="mt-0 text-light footerLinks" style="color: #e3b052;"> Boston Municipality </a><br>
+				</div>
+				<div class="col-12 " style="background-color: #e3b052;">
+					<h5 class="text-center text-light m-0 p-0">Copywrite by Watch it Outside Co.Ltd.</h5>
+				</div>
+
+        <!-- -->
+			</div>    
+		</div>
+	</footer>
+   
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.4/holder.js"></script>
+  <script src="https://kit.fontawesome.com/958faee643.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

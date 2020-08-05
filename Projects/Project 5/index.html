@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="Style/style.css">
+		<title>Random Quote Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="col-sm-12 text-center p-2"> Welcome to my Random Quote Generator </h1>
+			<h3 class="col-sm-12 d-flex justify-content-center text-center "> What type of Quote would you like today? </h3>
+		<div class="row">
+			<article class="form-check-inline col-sm-12 d-flex text-center">
+            	<div class="form-check radio-select col-sm-6">
+              		<label class="hover-label">
+                		<img class="radio-img" src="Images/motivational.jpg"/>
+                		<input type="radio" class="form-check-input" checked="true" name="radiobutton" id="motivationalQuote" value="motivationalQuote">
+                		<label class="form-check-label"><span>Motivational Quote</span></label>
+              		</label>
+           		 </div>
+           		<div class="form-check radio-select col-sm-6">
+              		<label class="hover-label">
+                		<img class="radio-img" id="bear-grylls" src="Images/business.jpg"/>
+                		<input type="radio" class="form-check-input" name="radiobutton" id="businessQuote" value="businessQuote">
+                		<label class="form-check-label"><span>Business Quote</span></label>
+              		</label>
+             	</div>
+         	</article>
+        </div>
+        <!-- Dropdown Menu -->
+			<div class="col-sm-12 p-2 text-center">
+				<h3>How many quotes would you like?</h3>
+				<select class="m-2" id="list-dropdown"  aria-labelledby="dropdownMenuButton">
+					<option class="dropdown-item" value="1">1</option>
+					<option class="dropdown-item" value="2">2</option>
+					<option class="dropdown-item" value="3">3</option>
+					<option class="dropdown-item" value="4">4</option>
+					<option class="dropdown-item" value="5">5</option>
+				</select>
+			</div>
+
+				<!-- Button trigger modal -->
+
+			<div class="d-flex justify-content-center">
+				<button type="button" class="btn btn-lg btn-danger m-2" id="quoteButton" data-toggle="modal" data-target="#exampleModalCentered"> Show me my Quote </button>
+
+				<!-- Modal -->
+
+			<div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content" id="modalContent">
+						<div class="modal-header">
+							<h5 class="modal-title" id="quoteTitle"></h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body" id="quoteGoesHere">
+								
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+		</div>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.4/holder.js"></script>
+		<script src="JavaScript/script.js"></script>
+	</body>
+</html>
