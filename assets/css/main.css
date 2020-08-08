@@ -2099,6 +2099,7 @@ input, select, textarea {
 
 		.image img {
 			border-radius: 3px;
+			margin: 0.3em;
 			display: block;
 		}
 
@@ -2668,6 +2669,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		margin: 0.03rem 0;
 	}
 
 		.spotlight .image {
@@ -2682,6 +2684,7 @@ input, select, textarea {
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+				margin: 0.75em 0;
 			}
 
 		.spotlight .content {
